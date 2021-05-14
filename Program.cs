@@ -32,6 +32,7 @@ namespace TestConsole
             
             using (ServiceProvider serviceProvider = services.BuildServiceProvider())
             {
+                //comment
                 IFeatureManager featureManager = serviceProvider.GetRequiredService<IFeatureManager>();
 
                 var enabled = await featureManager.IsEnabledAsync("ff_RefreshWeatherData", ff);
